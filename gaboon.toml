@@ -1,0 +1,18 @@
+[project]
+src = "src"
+out = "out"
+script = "script"
+lib = "lib"
+installer = "uv"
+dependencies = [
+    "pcaversaccio/snekmate@0.1.0",
+]
+
+[networks.sepolia]
+url = "https://ethereum-sepolia-rpc.publicnode.com"
+chain_id = 11155111
+
+[networks.zksync-sepolia]
+url = "https://sepolia.era.zksync.dev"
+chain_id = 300
+is_zksync = true
